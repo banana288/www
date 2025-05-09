@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bananichiki - Запись на прием</title>
+    <link rel="stylesheet" href="6.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                 <li><a href="index.html">Главная</a></li>
+                <li><a href="2.html">Услуги</a></li>
+                <li><a href="3.html">О нас</a></li>
+                <li><a href="4.html">Контакты</a></li>
+                <li><a href="5.html">Отзывы</a></li>
+                <li><a href="6.html">Запись</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="appointment">
+            <h1>Записывайтесь на прием здесь!</h1>
+
+            <div class="form-container">
+                <img src="pic/9.9" alt="Cute Bunny" class="bunny-image bunny-left">
+
+                <div class="form-card">
+                    <h2>Заполните форму</h2>
+                    <form id="appointment-form">
+                        <div class="form-group">
+                            <label for="fio">ФИО:</label>
+                            <input type="text" id="fio" name="fio" placeholder="Введите ФИО">
+                            <p class="error-message" id="fio-error"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Номер телефона:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Почта:</label>
+                            <input type="email" id="email" name="email" placeholder="Введите почту">
+                            <p class="error-message" id="email-error"></p>
+                        </div>
+
+                        <button type="submit" class="submit-button">Отправить</button>
+                    </form>
+                </div>
+
+                <img src="pic/8.8" alt="Cute Cat" class="bunny-image cat-right">
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+         <p> Bananchiki12@mail.ru</p>
+         <p> +7 (896) 345 72-19 </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стоматология - Наши Услуги</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                 <li><a href="index.html">Главная</a></li>
+                <li><a href="2.html">Услуги</a></li>
+                <li><a href="3.html">О нас</a></li>
+                <li><a href="4.html">Контакты</a></li>
+                <li><a href="5.html">Отзывы</a></li>
+                <li><a href="6.html">Запись</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>НАШИ УСЛУГИ:</h1>
+
+        <div class="services-container">
+            <div class="service-card" data-name="Лечение кариеса" data-price="5000">
+                <h2>Лечение кариеса</h2>
+                <p>5000 рублей</p>
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+            </div>
+
+            <div class="service-card" data-name="Брекет-система" data-price="55000">
+                <h2>Брекет-система</h2>
+                <p>55 000 рублей</p>
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+            </div>
+
+            <div class="service-card" data-name="Консультация" data-price="0">
+                <h2>Консультация</h2>
+                <p>0 рублей</p>
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+            </div>
+
+            <div class="service-card" data-name="Хирургия" data-price="7000">
+                <h2>Хирургия</h2>
+                <p>7000 рублей</p>
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+            </div>
+
+            <div class="service-card" data-name="Чистка" data-price="3500">
+                <h2>Чистка</h2>
+                <p>3500 рублей</p>
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+            </div>
+
+            <div class="service-card" data-name="Имплантация" data-price="35000">
+                <h2>Имплантация</h2>
+                <p>35 000 рублей</p>
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+            </div>
+        </div>
+
+        <button id="cart-button">Корзина</button>
+
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Корзина</h2>
+                <ul id="cart-items"></ul>
+                <p>Итого: <span id="cart-total">0</span> рублей</p>
+                <button id="checkout-button">Оформить заказ</button>
+            </div>
+        </div>
+
+        <div id="popup-message" class="popup">
+          <p>Оплата будет после посещения клиники.</p>
+        </div>
+
+    </main>
+
+    <footer>
+          <p> Bananchiki12@mail.ru</p>
+          <p> +7 (896) 345 72-19 </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

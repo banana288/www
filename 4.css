@@ -1,0 +1,118 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe4e1; /* Light pink background */
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.contacts {
+    padding: 50px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #6a5acd; /* Purple title */
+    margin-bottom: 20px;
+}
+
+.contact-card {
+    background-color: #ffd3ee; /* Light pink card background */
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items:  center;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+.email, .phone, .address {
+    color: #ff69b4; /* Light coral */
+}
+
+.greeting {
+    color: #6a5acd; /* Royal blue */
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.bunny-image {
+    max-width: 200px;
+    height: auto;
+}
+
+.map-link {
+    color: #00ff2f; /* Light coral */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li {
+        margin-bottom: 10px;
+    }
+
+    .contact-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .bunny-image {
+        max-width: 150px;
+    }
+}

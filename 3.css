@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe4e1; /* Light pink background */
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.about {
+    padding: 50px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #6a5acd; /* Purple title */
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #6a5acd; /* Purple tagline */
+    margin-bottom: 30px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+}
+
+.left-content, .right-content {
+    width: 45%; /* Adjust width to fit content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.text-box {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.left-content .text-box {
+    border: 2px solid #ff69b4; /* Pink border */
+}
+
+.right-content .text-box {
+    border: 2px solid #6a5acd; /* Blue border */
+}
+
+.bunny-image {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li {
+        margin-bottom: 10px;
+    }
+
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-content, .right-content {
+        width: 90%;
+    }
+
+    .bunny-image {
+        max-width: 150px;
+    }
+}
