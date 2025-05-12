@@ -158,55 +158,6 @@ document.addEventListener('DOMContentLoaded', function() {
     localStorage.setItem('visitorCount', visitorCount);
     visitorCountElement.textContent = visitorCount;
 });
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('feedbackForm');
-    const successMessage = document.getElementById('successMessage');
 
-    form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Предотвращаем стандартную отправку формы
-
-        // Получаем данные из формы
-        const name = document.getElementById('name').value;
-        const message = document.getElementById('message').value;
-        const photo = document.getElementById('photo').files[0]; // Получаем файл
-
-        // ** Здесь будет логика отправки данных на сервер.  Замените этот код на вашу логику! **
-        // Например, отправка данных с помощью fetch API:
-        const formData = new FormData();
-        formData.append('name', name);
-        formData.append('message', message);
-        if (photo) {
-            formData.append('photo', photo);
-        }
-
-
-        fetch('/submit-feedback', { // Замените '/submit-feedback' на ваш URL обработчика
-            method: 'POST',
-            body: formData
-        })
-        .then(response => {
-            if (response.ok) {
-                // Если отправка успешна, показываем сообщение об успехе
-                successMessage.style.display = 'block';
-                // Очищаем форму (необязательно)
-                form.reset();
-            } else {
-                // Обработка ошибок отправки
-                alert('Произошла ошибка при отправке отзыва.');
-                console.error('Ошибка при отправке:', response.status, response.statusText);
-            }
-        })
-        .catch(error => {
-            // Обработка ошибок сети или других ошибок
-            alert('Произошла ошибка при отправке отзыва.');
-            console.error('Ошибка:', error);
-        });
-
-
-
-        //  **  Закомментированный  пример с  `alert`  для простого тестирования (удалите, когда реализуете отправку на сервер): **
-        // alert('Отзыв отправлен!\nИмя: ' + name + '\nСообщение: ' + message + (photo ? '\nФото: ' + photo.name : ''));
-        // successMessage.style.display = 'block';
-        // form.reset(); // Очистка формы
     });
 });
